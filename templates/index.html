@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head bgcolor="red">
+    <meta charset="UTF-8">
+    <title>Spam Filter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css' ) }}" rel="stylesheet">
+</head>
+<body style="background-color:powderblue;">
+    <form action = "http://localhost:5000/result" method="POST">
+        <h3 style="margin-left: 40%">NAIVE BAYES ALGORITHM SPAM FILTER</h3>
+        <br>
+        <h4 style="margin-left: 10%"> Paste your email here to check whether it's spam or ham: <br>
+         </h4>
+        <br>
+        <p style="margin-left: 50%"><strong>{{ context}}</strong></p>
+        <p><textarea rows="14" cols="60" name ="mail_eg" placeholder="enter your mail" style="margin-left: 40%"></textarea></p>
+        <p><input type="submit" class="btn btn-primary" style="margin-left: 60%"></p>
+    </form>
+</body>
+</html>

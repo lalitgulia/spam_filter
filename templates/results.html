@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Filter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css' ) }}" rel="stylesheet">
+</head>
+<body style="background-color:powderblue;">
+    <br>
+    <h4 >You Entered:-</h4>
+    <br>
+    <div style="margin-left: 10%">{{ content }}</div>
+    <h3 style="margin-left: 10%">Prediction:</h3>
+    <div style="margin-left: 10%">This mail is <strong>{{ output }}</strong>  with spam Probability : <strong>{{probability}}</strong></div><br>
+<form action ="/">
+    <input type="submit" class="btn btn-primary" style="margin-left: 10%" value="Check another mail">
+</form>
+</body>
+</html>
